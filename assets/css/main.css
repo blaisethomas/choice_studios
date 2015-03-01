@@ -1,14 +1,4 @@
-/*@keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
-}*/
+
 
 div#slider{ 
   overflow: hidden; 
@@ -18,6 +8,10 @@ div#slider figure img {
   width: 20%; float: left; 
 }
 
+.logo {
+  margin-top: -500px;
+  float: right;
+}
 div#slider figure { 
   position: relative;
   width: 500%;
@@ -25,6 +19,11 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
+  -webkit-animation: 30s slidy infinite;
+   -moz-animation: 30s slidy infinite;
+    -ms-animation: 30s slidy infinite;
+     -o-animation: 30s slidy infinite;
+        animation: 30s slidy infinite;
   /*animation: 30s slidy infinite; */
 }
 
@@ -36,42 +35,47 @@ body{
   margin: 0;
 } 
 
-p#first{
-  color: lime; 
+p {
+  color: white; 
   font-family: "Courier";
   font-size: 30px;
   margin: 10px 0 0 10px;
   white-space: nowrap;
   overflow: hidden;
   width: 30em;
-  -webkit-animation: type 1s steps(20, end);
-   -moz-animation: type 1s steps(20, end);
-    -ms-animation: type 1s steps(20, end);
-     -o-animation: type 1s steps(20, end);
-        animation: type 1s steps(20, end);
+}
+
+
+#first{
+  -webkit-animation: type2 4s steps(60, end);
+   -moz-animation: type2 4s steps(60, end);
+    -ms-animation: type2 4s steps(60, end);
+     -o-animation: type2 4s steps(60, end);
+        animation: type2 4s steps(60, end);
   /*animation: type 1s steps(20, end); */
 }
 
-p#second{
-  -webkit-animation: type2 2s steps(60, end);
-   -moz-animation: type2 2s steps(60, end);
-    -ms-animation: type2 2s steps(60, end);
-     -o-animation: type2 2s steps(60, end);
-        animation: type2 2s steps(60, end);
+#second{
+  -webkit-animation: type2 6s steps(40, end);
+   -moz-animation: type2 6s steps(40, end);
+    -ms-animation: type2 6s steps(40, end);
+     -o-animation: type2 6s steps(40, end);
+        animation: type2 6s steps(40, end);
   /*animation: type2 2s steps(60, end);*/
 }
 
-p#third{
-  -webkit-animation: type 5s steps(60, end);
-   -moz-animation: type 5s steps(60, end);
-    -ms-animation: type 5s steps(60, end);
-     -o-animation: type 5s steps(60, end);
-        animation: type 5s steps(60, end);  
+#third{
+  -webkit-animation: type2 11s steps(60, end);
+   -moz-animation: type2 11s steps(60, end);
+    -ms-animation: type2 11s steps(60, end);
+     -o-animation: type2 11s steps(60, end);
+        animation: type2 11s steps(60, end);  
   /*animation: type2 5s steps(60, end);*/
 }
 
+
 p a{
-  color: lime;
+  color: white;
   text-decoration: none;
 }
 
@@ -82,6 +86,18 @@ p a{
      -o-animation: blink 1s infinite;
         animation: blink 1s infinite;  
   /*animation: blink 1s infinite;*/
+}
+
+@-webkit-keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
 }
 
 @-webkit-keyframes type{ 
